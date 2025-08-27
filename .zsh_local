@@ -1,0 +1,15 @@
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# Android SDK
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# python venv
+export PATH=.venv/bin:$PATH
+
+# base16 shell
+export BASE16_SHELL="$HOME/.config/base16-shell/"
+
+# zsh history
+export HISTFILE=.zsh_history
