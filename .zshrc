@@ -15,7 +15,8 @@ fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
-source "/usr/share/zsh-antigen/antigen.zsh"
+# source "/usr/share/zsh-antigen/antigen.zsh"
+source "${HOME}/antigen.zsh"
 
 antigen theme romkatv/powerlevel10k
 antigen bundle jeffreytse/zsh-vi-mode
@@ -24,6 +25,12 @@ antigen apply
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# asdf java plugin
+[ -e "${HOME}/.asdf/plugins/java/set-java-home.zsh" ] && source "${HOME}/.asdf/plugins/java/set-java-home.zsh"
+
+# cargo rust package manager
+[ -e "${HOME}/.cargo/env" ] && source "${HOME}/.cargo/env"
 
 # Base16 Shell
 # source "${BASE16_SHELL}/base16-shell.plugin.zsh"
