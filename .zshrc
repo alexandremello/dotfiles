@@ -52,3 +52,8 @@ setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
 setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history file.
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion.
 setopt HIST_NO_STORE             # Don't store history commands
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/alexandre/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
