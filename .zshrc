@@ -20,6 +20,7 @@ source "${HOME}/antigen.zsh"
 
 antigen theme romkatv/powerlevel10k
 antigen bundle jeffreytse/zsh-vi-mode
+antigen bundle zsh-npm-scripts-autocomplete
 
 antigen apply
 

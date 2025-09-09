@@ -13,3 +13,6 @@ export BASE16_SHELL="$HOME/.config/base16-shell/"
 
 # zsh history
 export HISTFILE=.zsh_history
+
+# nodejs
+export PATH=$PATH:./node_modules/.bin
