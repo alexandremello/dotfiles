@@ -16,3 +16,6 @@ export HISTFILE=.zsh_history
 
 # nodejs
 export PATH=$PATH:./node_modules/.bin
+
+# docker
+export PATH=$PATH:$HOME/.docker/bin
