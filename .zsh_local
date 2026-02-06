@@ -19,3 +19,6 @@ export PATH=$PATH:./node_modules/.bin
 
 # docker
 export PATH=$PATH:$HOME/.docker/bin
+
+# zsh kill word
+#export WORDCHARS=
